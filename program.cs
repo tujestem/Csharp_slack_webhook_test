@@ -32,7 +32,7 @@ class EventLogMonitor
         eventLog.EntryWritten += new EntryWrittenEventHandler(OnEntryWritten);
         eventLog.EnableRaisingEvents = true;
 
-        // A loop that prevents program termination.
+        // loop that prevents program termination.
         while (true)
         {
             Thread.Sleep(10000); // Wait 10 seconds.
